@@ -14,3 +14,6 @@ window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, svg: {font
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 # The Birthday Problem & Hash Collisions
+
+**TL;DR:** If a hash has $m$ bits, you hit a ~50% collision chance after about $1.1774\\cdot 2^{m/2}$ random draws.  
+That “square-root” law is why 160-bit SHA-1 fell and 256-bit hashes are still comfortable.
