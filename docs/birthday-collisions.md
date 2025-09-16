@@ -15,5 +15,13 @@ window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, svg: {font
 
 # The Birthday Problem & Hash Collisions
 
-**TL;DR:** If a hash has $m$ bits, you hit a ~50% collision chance after about $1.1774\\cdot 2^{m/2}$ random draws.  
-That “square-root” law is why 160-bit SHA-1 fell and 256-bit hashes are still comfortable.
+<em>How many random files before we should expect a collision?</em>
+
+## From birthdays to hashes
+
+For $k$ uniform draws from a space of size $n$, probability of no collision is
+
+$$
+P_0(k;n) = \prod_{i=0}^{k-1} \left(1 - \frac{i}{n}\right)
+\approx \exp\!\left( -\frac{k(k-1)}{2n} \right).
+$$
