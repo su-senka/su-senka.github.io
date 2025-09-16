@@ -1,1 +1,0 @@
-# su-senka.github.io
