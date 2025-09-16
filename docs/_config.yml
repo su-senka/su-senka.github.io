@@ -1,4 +1,6 @@
+theme: minima
+title: Your Name — Math & Code
+description: Probability, statistics, and practical computing.
 markdown: kramdown
 kramdown:
   input: GFM
-  math_engine: mathjax
